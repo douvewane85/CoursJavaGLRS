@@ -3,7 +3,7 @@ public abstract class Figure{
 
    //attributs
           //instance
-            protected double  longeur;
+            protected double  longueur;
           //Classe 
             protected static String unite;  
 
@@ -15,11 +15,11 @@ public abstract class Figure{
       }
    //Getters et Setters=> toujours methodes concretes, methodes  Intances ou  methodes     //Classe 
      //Getters et Setters de longueur
-      public double getLongeur(){
+      public double getLongueur(){
           return this.longueur;
      }
 
-     public void setLongeur(double longueur){
+     public void setLongueur(double longueur){
             this.longueur=longueur;
      }
 
@@ -36,7 +36,7 @@ public abstract class Figure{
      public abstract double demiPerimetre() ;    
       
     public double perimetre() {
-         demiPerimetre()*2;
+         return demiPerimetre()*2;
    }  
 
    public abstract double surface() ; 
