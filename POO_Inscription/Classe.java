@@ -4,7 +4,19 @@ public class Classe implements IInscription{
     private int id;
     private String nom;
 
+
+    //Constructeur
+    public Classe(){
+
+    }
+
+    public Classe(String nom){
+       this.nom=nom;
+   }
+
+
    //Getters and Setters
+
 
    //redefinition de la methode affiche()
 

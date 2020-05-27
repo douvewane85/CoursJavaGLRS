@@ -1,5 +1,6 @@
+import java.time.LocalDate;
 
-public abstract class Personne implements IInscription{
+public abstract class Personne implements IInscription {
 
    //Auto généré
     protected int id;
