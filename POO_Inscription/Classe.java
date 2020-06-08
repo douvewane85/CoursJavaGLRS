@@ -3,6 +3,7 @@ public class Classe implements IInscription{
    //Auto généré
     private int id;
     private String nom;
+    //private static int nbreClasse;
 
 
     //Constructeur
@@ -16,7 +17,12 @@ public class Classe implements IInscription{
 
 
    //Getters and Setters
-
+    public int getId(){
+       return id;
+    }
+    public void setId(int id){
+       this.id=id;
+    }
 
    //redefinition de la methode affiche()
 

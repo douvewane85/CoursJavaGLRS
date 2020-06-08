@@ -20,6 +20,8 @@ public class Service {
 
     public void creerClasse(Classe classe){
         if(nbreClasse<TAILLE){
+            //Generer ID de la Classe
+            classe.setId(nbreClasse+1);
             tabclasse[nbreClasse]=classe;
             nbreClasse++;
         }else{
@@ -34,12 +36,24 @@ public class Service {
         
     }
 
+    
     public void  ajouterPersonne(Personne pers){
+          tabPersonne[nbrePersonne]=pers;
+           nbrePersonne++;
 
     }
 
-    public void listerEudiantParClasse(){
-       
+    public void listerEtudiantParClasse(Classe classe){
+        for(int i=0;i<nbrePersonne;i++){
+            if(tabPersonne[i] instanceof Etudiant){
+                //Convertion d'une Personne en un Etudiant=> downCasting
+                //((Etudiant)tabPersonne[i]) possible car Etudiant herite de Personne
+                   if(((Etudiant)tabPersonne[i]).getClasse().getId()==classe.getId()){
+                       System.out.println(tabPersonne[i].affiche());
+                   }
+            }
+           
+        }
         
     }
 

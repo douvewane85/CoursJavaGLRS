@@ -24,7 +24,13 @@ public class Etudiant extends Personne {
           }
 
    //Getters and Setters
+     public Classe getClasse(){
+        return this.classeEtu;
+     }
 
+     public void setClasse(Classe classe){
+           this.classeEtu=classe;
+   }
    //redefinition de la methode affiche()
 
     @Override
